@@ -1,0 +1,416 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.navbar-brand span,
+footer h3 span {
+    color: #e85d35;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+.nav-icon {
+    color: #222;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#cart-count {
+    font-size: 11px;
+    background: #e85d35;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+.hero {
+    background: #f5f3ef;
+    padding: 70px 0;
+    min-height: 480px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: #e85d35;
+}
+
+.hero-text {
+    color: #777;
+    max-width: 450px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.hero-img {
+    max-height: 350px;
+    object-fit: contain;
+}
+
+.shop-btn,
+.add-btn {
+    background: #e85d35;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+}
+
+.shop-btn:hover,
+.add-btn:hover {
+    background: #222;
+    color: white;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading p {
+    color: #e85d35;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-weight: 800;
+}
+
+.category-card {
+    text-align: center;
+    background: #f6f5f2;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.category-card h5 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.trending-section {
+    background: #f8f8f8;
+}
+
+.product-card {
+    background: white;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-img {
+    height: 220px;
+    position: relative;
+    background: #eee;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #e85d35;
+    color: white;
+    padding: 5px 10px;
+    font-size: 11px;
+    z-index: 1;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info p {
+    color: #888;
+    font-size: 13px;
+}
+
+.product-info h5 {
+    font-weight: bold;
+}
+
+.product-info h6 {
+    color: #e85d35;
+    font-weight: bold;
+}
+
+.add-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.offer-section {
+    background: #222;
+    color: white;
+    padding: 65px 0;
+}
+
+.offer-section p {
+    color: #e85d35;
+    letter-spacing: 3px;
+}
+
+.offer-section h2 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.offer-btn {
+    background: #e85d35;
+    color: white;
+    margin-top: 15px;
+    padding: 12px 25px;
+}
+
+.offer-btn:hover {
+    background: white;
+    color: #222;
+}
+
+footer {
+    background: #151515;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+footer p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e85d35;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        margin: 20px auto;
+    }
+
+    .hero-img {
+        margin-top: 30px;
+    }
+}
+.category-link {
+    text-decoration: none;
+    color: #222;
+}
+
+.category-card span {
+    color: #e85d35;
+    font-size: 13px;
+}
+.category-banner {
+    background: #f5f3ef;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.category-banner h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.category-banner p {
+    color: #777;
+}
+
+.auth-body {
+    background: #f5f3ef;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.auth-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+}
+
+.brand {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #222;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.brand span {
+    color: #e85d35;
+}
+
+.auth-card h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.auth-card > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.auth-card label {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.auth-card .form-control {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.auth-card a {
+    color: #e85d35;
+    text-decoration: none;
+}
+
+.auth-btn {
+    background: #e85d35;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.auth-btn:hover {
+    background: #222;
+    color: white;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CART PAGE */
+
+.cart-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item h5 {
+    font-weight: 600;
+}
+
+.cart-item h6 {
+    color: #e85d35;
+    font-weight: bold;
+}
+
+.cart-summary {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.cart-summary h5:last-child {
+    color: #e85d35;
+}
+
+@media (max-width: 576px) {
+    .cart-item img {
+        width: 100%;
+        height: 200px;
+    }
+}
+/* Hero Image Carousel */
+
+#heroCarousel {
+    max-width: 550px;
+    margin: auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#heroCarousel .carousel-indicators {
+    bottom: 10px;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+    width: 10%;
+}
+/* About Page Shoe Video */
+
+.about-video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}

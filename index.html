@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleCrafts | Step Into Style</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            Sole<span style="color:#e85d35">Crafts.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="categories/men.html">Men</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="categories/women.html">Women</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="categories/sports.html">Sports</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="categories/casual.html">Casual</a>
+    </li>
+
+    <a class="nav-link" href="about.html">About</a>
+
+</ul>
+            <div class="d-flex align-items-center gap-3">
+
+                <a href="login.html" class="nav-link">Login</a>
+
+                <a href="register.html" class="btn btn-dark btn-sm">
+                    Register
+                </a>
+
+                <a href="cart.html" class="nav-icon">
+                    <i class="bi bi-bag"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                </a>
+                    <a href="wishlist.html" class="nav-icon">
+                    <i class="bi bi-heart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p class="text-uppercase fw-bold">Discover Your Style</p>
+                <h1>Step Into<br><span>Something</span> Better.</h1>
+                <p class="hero-text">
+                    Find your perfect pair. Explore premium footwear
+                    designed for comfort, confidence and everyday style.
+                </p>
+                <a href="#trending" class="btn shop-btn">
+                    Shop Now <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 text-center">
+
+    <div id="heroCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="2000"
+     data-bs-pause="false">
+        
+
+        <!-- Carousel Images -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900"
+                     class="d-block w-100 hero-img"
+                     alt="Red Sports Shoes">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900"
+                     class="d-block w-100 hero-img"
+                     alt="Casual Shoes">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=900"
+                     class="d-block w-100 hero-img"
+                     alt="Fashion Sneakers">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="container py-5" id="categories">
+  <div class="section-heading">
+    <p>EXPLORE OUR COLLECTION</p>
+    <h2>Shop By Category</h2>
+  </div>
+
+  <div class="row g-4 mt-3">
+
+    <div class="col-md-3 col-6">
+      <a href="categories/men.html" class="category-link">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=500" alt="Men shoes">
+          <h5>Men's Shoes</h5>
+          <span>Explore Collection →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3 col-6">
+      <a href="categories/women.html" class="category-link">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500" alt="Women shoes">
+          <h5>Women's Shoes</h5>
+          <span>Explore Collection →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3 col-6">
+      <a href="categories/sports.html" class="category-link">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Sports shoes">
+          <h5>Sports Shoes</h5>
+          <span>Explore Collection →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3 col-6">
+      <a href="categories/casual.html" class="category-link">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500" alt="Casual shoes">
+          <h5>Casual Shoes</h5>
+          <span>Explore Collection →</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TRENDING PRODUCTS -->
+<section class="trending-section py-5" id="trending">
+    <div class="container">
+        <div class="section-heading">
+            <p>OUR BEST PICKS</p>
+            <h2>Trending Products</h2>
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="sale-tag">NEW</span>
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Red sneaker">
+                    </div>
+                    <div class="product-info">
+                        <p>Sports Collection</p>
+                        <h5>Air Runner Pro</h5>
+                        <h6>₹2,499</h6>
+                        <a href="cart.html" class="btn add-btn">
+                        <i class="bi bi-bag-plus"></i> Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500" alt="Casual sneaker">
+                    </div>
+                    <div class="product-info">
+                        <p>Casual Collection</p>
+                        <h5>Street Classic</h5>
+                        <h6>₹1,899</h6>
+                        <a href="cart.html" class="btn add-btn">
+    <i class="bi bi-bag-plus"></i> Add to Cart
+</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="sale-tag">HOT</span>
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=500" alt="Fashion sneaker">
+                    </div>
+                    <div class="product-info">
+                        <p>Premium Collection</p>
+                        <h5>Urban Flex</h5>
+                        <h6>₹2,999</h6>
+                        <a href="cart.html" class="btn add-btn">
+    <i class="bi bi-bag-plus"></i> Add to Cart
+</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=500" alt="Running shoe">
+                    </div>
+                    <div class="product-info">
+                        <p>Running Collection</p>
+                        <h5>Speed Max</h5>
+                        <h6>₹2,299</h6>
+                        <a href="cart.html" class="btn add-btn">
+    <i class="bi bi-bag-plus"></i> Add to Cart
+</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- OFFER BANNER -->
+<section class="offer-section" id="about">
+    <div class="container text-center">
+        <p>LIMITED TIME OFFER</p>
+        <h2>Up To 40% OFF</h2>
+        <h4>On Selected Footwear Collections</h4>
+        <a href="#trending" class="btn offer-btn">Explore Collection</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h3>Sole<span>Crafts.</span></h3>
+                <p>Step into comfort. Walk with confidence.
+                   Discover your style with SoleCrafts.</p>
+            </div>
+
+            <div class="col-md-4">
+    <h5>Quick Links</h5>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="#categories">Categories</a></p>
+    <p><a href="#trending">Trending</a></p>
+    <p><a href="about.html">About Us</a></p>
+    <p><a href="feedback.html">Feedback</a></p>
+</div>
+
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter-x"></i>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="text-center mb-0">
+            © 2026 SoleCrafts. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

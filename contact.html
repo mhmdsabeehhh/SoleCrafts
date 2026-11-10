@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | SoleCrafts</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-header {
+            background: #f8f8f8;
+            padding: 60px 0;
+        }
+
+        .contact-card {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .contact-card i {
+            font-size: 30px;
+            color: #e85d35;
+        }
+
+        .contact-form {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            background: white;
+        }
+
+        .contact-form .form-control {
+            padding: 12px;
+        }
+
+        .send-btn {
+            background: #e85d35;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+        .send-btn:hover {
+            background: #c94b29;
+            color: white;
+        }
+        /* GOOGLE MAP */
+
+.map-section {
+    padding: 20px 0 50px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            Sole<span style="color:#e85d35">Crafts.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/men.html">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/women.html">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/casual.html">Casual</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+                <a href="login.html" class="nav-link">Login</a>
+
+                <a href="register.html" class="btn btn-dark btn-sm">
+                    Register
+                </a>
+
+                <a href="cart.html" class="nav-icon">
+                    <i class="bi bi-bag"></i>
+                    <span id="cart-count">0</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-icon">
+                    <i class="bi bi-heart"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!-- CONTACT HEADER -->
+
+<section class="contact-header text-center">
+    <div class="container">
+        <p class="text-uppercase fw-bold">Get in Touch</p>
+        <h1>Contact Us</h1>
+        <p class="mb-0">We would love to hear from you. How can we help?</p>
+    </div>
+</section>
+
+<!-- CONTACT INFORMATION -->
+
+<section class="container py-5">
+    <div class="row g-4 text-center">
+
+        <div class="col-md-4">
+            <div class="contact-card">
+                <i class="bi bi-envelope"></i>
+                <h5 class="mt-3">Email Us</h5>
+                <p class="mb-0">Send us your questions or feedback.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card">
+                <i class="bi bi-telephone"></i>
+                <h5 class="mt-3">Call Us</h5>
+                <p class="mb-0">We are happy to assist you.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card">
+                <i class="bi bi-clock"></i>
+                <h5 class="mt-3">Support Hours</h5>
+                <p class="mb-0">Monday – Saturday</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- GOOGLE MAP SECTION -->
+
+<section class="container map-section">
+
+    <div class="text-center mb-4">
+        <p class="text-uppercase fw-bold">Find Us</p>
+        <h2>Our Location</h2>
+        <p>Visit us and explore the world of SoleCrafts.</p>
+    </div>
+
+    <iframe
+        src="https://www.google.com/maps?q=Thodupuzha,Kerala,India&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</section>
+<!-- CONTACT FORM -->
+
+<section class="container pb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <div class="contact-form">
+                <div class="text-center mb-4">
+                    <p class="text-uppercase fw-bold">Send a Message</p>
+                    <h2>We’re Here to Help</h2>
+                    <p>Fill in the form below and tell us how we can help you.</p>
+                </div>
+
+                <form action="mailto:YOUR_EMAIL_HERE" method="post"
+                    enctype="text/plain">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control"
+                                name="Name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control"
+                                name="Email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control"
+                                name="Subject" placeholder="Enter subject" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Your Message</label>
+                            <textarea class="form-control" name="Message"
+                                rows="5" placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                            <button type="submit" class="send-btn">
+                                Send Message
+                                <i class="bi bi-send ms-2"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container text-center py-4">
+        <h3>Sole<span>Crafts.</span></h3>
+        <p>Step into comfort. Walk with confidence.</p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="feedback.html">Feedback</a>
+        </p>
+
+        <p class="mb-0">© 2026 SoleCrafts. All Rights Reserved.</p>
+    </div>
+</footer>
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Your message has been sent successfully!");
+
+        window.location.href = "about.html";
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
