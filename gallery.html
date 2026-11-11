@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | SoleCrafts</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .gallery-header {
+            background: #f8f8f8;
+            padding: 60px 0;
+        }
+
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #f8f8f8;
+            cursor: pointer;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-info {
+            padding: 15px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .gallery-info h5 {
+            margin-bottom: 5px;
+        }
+
+        .filter-btn {
+            border: 1px solid #e85d35;
+            color: #e85d35;
+            background: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: #e85d35;
+            color: white;
+        }
+
+        .gallery-item {
+            transition: 0.3s;
+        }
+
+        .gallery-item.hide {
+            display: none;
+        }
+
+        .modal-img {
+            width: 100%;
+            max-height: 75vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            Sole<span style="color:#e85d35">Crafts.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/men.html">Men</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/women.html">Women</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/sports.html">Sports</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/casual.html">Casual</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html">Gallery</a>
+                </li>
+
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+
+                <a href="login.html" class="nav-link">Login</a>
+
+                <a href="register.html" class="btn btn-dark btn-sm">
+                    Register
+                </a>
+
+                <a href="cart.html" class="nav-icon">
+                    <i class="bi bi-bag"></i>
+                    <span id="cart-count">0</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-icon">
+                    <i class="bi bi-heart"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- GALLERY HEADER -->
+
+<section class="gallery-header text-center">
+    <div class="container">
+        <p class="text-uppercase fw-bold">Our Collection</p>
+        <h1>Shoe Gallery</h1>
+        <p class="mb-0">
+            Explore our collection of stylish and comfortable footwear.
+        </p>
+    </div>
+</section>
+
+<!-- IMAGE GALLERY -->
+
+<section class="container py-5">
+
+    <div class="text-center mb-4">
+
+        <p class="text-uppercase fw-bold">Explore Our Styles</p>
+        <h2>Discover Our Footwear</h2>
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="mt-4">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="men">
+                Men
+            </button>
+
+            <button class="filter-btn" data-filter="women">
+                Women
+            </button>
+
+            <button class="filter-btn" data-filter="sports">
+                Sports
+            </button>
+
+            <button class="filter-btn" data-filter="casual">
+                Casual
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="row g-4" id="gallery">
+
+        <!-- MEN -->
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="men">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=700"
+                     alt="Men's formal shoes">
+                <div class="gallery-info">
+                    <h5>Classic Men's Shoes</h5>
+                    <p class="mb-0 text-muted">Men's Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="men">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700"
+                     alt="Red men's sneakers">
+                <div class="gallery-info">
+                    <h5>Red Sneakers</h5>
+                    <p class="mb-0 text-muted">Men's Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- WOMEN -->
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="women">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=700"
+                     alt="Women's heels">
+                <div class="gallery-info">
+                    <h5>Elegant Heels</h5>
+                    <p class="mb-0 text-muted">Women's Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="women">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?w=700"
+                     alt="Women's fashion footwear">
+                <div class="gallery-info">
+                    <h5>Fashion Footwear</h5>
+                    <p class="mb-0 text-muted">Women's Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPORTS -->
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=700"
+                     alt="Sports sneakers">
+                <div class="gallery-info">
+                    <h5>Sports Sneakers</h5>
+                    <p class="mb-0 text-muted">Sports Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=700"
+                     alt="Running shoes">
+                <div class="gallery-info">
+                    <h5>Running Shoes</h5>
+                    <p class="mb-0 text-muted">Sports Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CASUAL -->
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="casual">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=700"
+                     alt="Casual shoes">
+                <div class="gallery-info">
+                    <h5>Street Style</h5>
+                    <p class="mb-0 text-muted">Casual Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="casual">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=700"
+                     alt="Casual sneakers">
+                <div class="gallery-info">
+                    <h5>Everyday Sneakers</h5>
+                    <p class="mb-0 text-muted">Casual Collection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="casual">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=700"
+                     alt="Stylish footwear">
+                <div class="gallery-info">
+                    <h5>Modern Footwear</h5>
+                    <p class="mb-0 text-muted">Casual Collection</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- IMAGE PREVIEW MODAL -->
+
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img src="" id="modalImage" class="modal-img" alt="Shoe preview">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container text-center py-4">
+
+        <h3>Sole<span>Crafts.</span></h3>
+
+        <p>Step into comfort. Walk with confidence.</p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="feedback.html">Feedback</a>
+        </p>
+
+        <p class="mb-0">
+            © 2026 SoleCrafts. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+// FILTER GALLERY
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", function() {
+
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        const filter = this.getAttribute("data-filter");
+
+        galleryItems.forEach(item => {
+
+            if (filter === "all" || item.dataset.category === filter) {
+                item.classList.remove("hide");
+            } else {
+                item.classList.add("hide");
+            }
+
+        });
+
+    });
+
+});
+
+// IMAGE PREVIEW
+
+const galleryImages = document.querySelectorAll(".gallery-card img");
+
+galleryImages.forEach(img => {
+
+    img.addEventListener("click", function() {
+
+        document.getElementById("modalImage").src = this.src;
+
+        const modal = new bootstrap.Modal(
+            document.getElementById("imageModal")
+        );
+
+        modal.show();
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
